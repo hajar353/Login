@@ -25,8 +25,6 @@ if (localStorage.getItem('inputs') != null) {
   inputs = JSON.parse(localStorage.getItem('inputs'));
 }
 
-
-
 function SignUp() {
     
     if (valdation() == true) {
@@ -55,9 +53,7 @@ function SignUp() {
 
     }
 
-
 }
-
 
 function check() {
     for (var i=0; i < inputs.length; i++) {
