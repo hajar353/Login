@@ -57,13 +57,11 @@ function SignUp() {
 
 function check() {
     for (var i=0; i < inputs.length; i++) {
-        if (inputEmail.value==inputs[i].email&&localStorage.getItem('inputs')!=null ) {
+        if (inputEmail.value==inputs[i].email) {
             return true
         }
-        else {
-            return false
-        }
     }
+    return false
 }
 
 
