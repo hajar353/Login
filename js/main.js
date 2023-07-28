@@ -39,6 +39,8 @@ function SignUp() {
             localStorage.setItem("inputs", JSON.stringify(inputs));
             err.innerHTML = ""
             sucsses.innerHTML = "sucsses"
+
+            window.location.replace("signin.html");
         } else {
             alert('email is exist')
         }
