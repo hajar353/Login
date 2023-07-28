@@ -79,7 +79,7 @@ function valdation() {
         return "Enter email like name@gmail/yahoo.com"
     }
     else if (regexPassword.test(inputPassword.value) == false) {
-        return "Enter password from a to z or 0 to 9 only 10 charcters"
+        return "Enter password from a to z or 0 to 9 only 10 charcters and At least 5 "
     }
     return true;
 }
