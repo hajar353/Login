@@ -98,6 +98,8 @@ users = JSON.parse(localStorage.getItem('inputs'))
 
 
 function logIn() {
+ if(valdationLogin()==true){
+
     var email = inputEmailSignIn.value
     var password = inputPasswordSignIn.value
     console.log(email);
@@ -117,8 +119,25 @@ function logIn() {
         // }
 
     }
-
+ }
+ else{
+    errorMassege = valdationLogin()
+    err.innerHTML = errorMassege
+ }
 
 }
 document.getElementById('gg').innerHTML = `welcome ${userName}`
 
+
+function valdationLogin(){
+    var Name = /[a-z]{3,20}/i
+    var Password = /[a-z0-9]{5,10}/i
+
+    if (Name.test(inputEmailSignIn.value) == false) {
+        return "Enter email like name@gmail/yahoo.com"
+    }
+    else if (Password.test(inputPasswordSignIn.value) == false) {
+        return  "Enter password from a to z or 0 to 9 only 10 charcters and At least 5 "
+    }
+    return true;
+}
