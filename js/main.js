@@ -108,7 +108,7 @@ function logIn() {
         if (users[i].email == email && users[i].password == password) {
             localStorage.setItem('name', users[i].name)
             // console.log('ok')
-            window.location.replace("home.html");
+            window.location.replace("index.html");
 
 
 
