@@ -92,9 +92,9 @@ function valdation() {
 
 
 
-var users = [];
+var users1 = [];
 
-users = JSON.parse(localStorage.getItem('inputs'))
+users1 = JSON.parse(localStorage.getItem('inputs'))
 
 
 function logIn() {
@@ -103,10 +103,10 @@ function logIn() {
     var email = inputEmailSignIn.value
     var password = inputPasswordSignIn.value
     console.log(email);
-    for (var i = 0; i < users.length; i++) {
+    for (var i = 0; i < users1.length; i++) {
 
-        if (users[i].email == email && users[i].password == password) {
-            localStorage.setItem('name', users[i].name)
+        if (users1[i].email == email && users1[i].password == password) {
+            localStorage.setItem('name', users1[i].name)
             // console.log('ok')
             window.location.replace("home.html");
 
